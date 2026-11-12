@@ -11,7 +11,7 @@ Revisão realizada em 12/11/2026 contra o arquivo inicial Briefing_Codex_EasySho
 | UI, Services e Data/Repositories | Separação presente | Web e Activity Android usam os mesmos arquivos de regras e dados |
 | CRUD nos repositórios | Create e Read implementados; Update/Delete não implementados | Edição/exclusão eram opcionais no mesmo briefing; não são alegadas como concluídas |
 | Estados vazios, loading, sucesso e erro | Presentes nas duas interfaces | UI web e Android, botões bloqueados durante operações |
-| Cultura monetária | Entrada vírgula/ponto sem milhar e exibição pt-BR | Decimal em C#, duas casas, preço positivo |
+| Cultura monetária | Entrada vírgula/ponto sem milhar e exibição pt-BR | Decimal em C#, duas casas, preço positivo; teclado Android corrigido e entrada 29,90 verificada via ADB |
 | Validação e duplicidade | Implementado; revisão acrescentou duas correções | 13 testes: inclui whitespace em nomes e chave de atributo vazia |
 | Async, recursos e exceções | Implementado conforme suporte dos drivers | Android usa Task.Run; conexões SQLite descartadas; LiteDB descartado |
 | Bancos temporários isolados nos testes | Implementado | Pastas únicas por teste, removidas no Dispose |

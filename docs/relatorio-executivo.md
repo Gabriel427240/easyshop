@@ -10,7 +10,7 @@ O workspace estava vazio e não havia SDK .NET disponível no PATH. Foi instalad
 
 A versão inicial utilizou interface web local. Após solicitação explícita do usuário, foi instalado o workload Android 36.1.2 e acrescentado um aplicativo nativo .NET for Android, com APK que inclui x86_64 e arm64. O emulador utilizado é Android 16/API 36 x86_64. Os mesmos arquivos de entidades, regras e repositórios são compilados nas duas plataformas, evitando divergência de validações. Não foi realizado teste em aparelho físico. Caixa, dívidas, frotas, viagens, dashboards, RBAC e sincronização estão não aplicáveis ao escopo EasyShop - pendentes de confirmação.
 
-UI chama endpoints HTTP; serviços aplicam regras; repositórios fazem persistência. A injeção de dependências controla os tempos de vida. SQLite utiliza parâmetros SQL e restrição de unicidade; LiteDB armazena produtos como documentos com decimal, lista de categorias e dicionário de atributos. Mensagens ao usuário omitem detalhes internos de falhas. O servidor escuta somente no loopback.
+Na versão web, a UI chama endpoints HTTP; no Android, a Activity chama diretamente os serviços. Em ambas, os serviços aplicam regras e os repositórios fazem persistência. A web utiliza injeção de dependências; a Activity compõe e descarta seus repositórios. SQLite utiliza parâmetros SQL e restrição de unicidade; LiteDB armazena produtos como documentos com decimal, categorias e atributos. Mensagens ao usuário omitem detalhes internos de falhas. O servidor web escuta somente no loopback; o APK não depende dele.
 
 ## Detalhamento dos módulos
 
@@ -55,6 +55,8 @@ Cronograma original de sprints: a confirmar, não fornecido. Prazo planejado inf
 A ausência inicial do SDK foi resolvida por instalação no perfil do usuário. A primeira restauração detectou aviso de vulnerabilidade em SQLitePCLRaw 2.1.11; a atualização de Microsoft.Data.Sqlite trouxe a versão transitiva 2.1.13 e a consulta de vulnerabilidades deixou de apresentar alertas. O teste de interface exigiu ajuste do seletor do campo de e-mail para incluir a marca visual de obrigatório; houve também correção de codificação do script de teste após leitura pelo PowerShell. Esses ajustes foram seguidos de nova execução.
 
 A separação das regras de negócio permitiu testes com bancos isolados, sem depender da UI. A unicidade deve ser garantida pelo banco além da validação de formulário. Evidências reproduzíveis e identificação clara de pendências evitam confundir protótipo demonstrável com entrega acadêmica final.
+
+Na revisão Android, o teclado numérico padrão do emulador removia a vírgula em 29,90. O campo foi corrigido para aceitar explicitamente vírgula e ponto, e o teste passou a conferir o texto digitado antes do cadastro. A primeira execução de CI Android falhou por tentar instalar o pacote obsoleto tools; o workflow passou a solicitar platform-tools explicitamente. A verificação local do APK incluiu reinício em modo avião e leitura em resolução compacta.
 
 ## Limitações e próximos passos
 

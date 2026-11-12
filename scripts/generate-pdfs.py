@@ -14,6 +14,8 @@ styles['Normal'].fontName = 'Helvetica'
 styles['Normal'].fontSize = 10
 styles['Normal'].leading = 15
 styles['Normal'].spaceAfter = 9
+styles['Normal'].allowWidows = 0
+styles['Normal'].allowOrphans = 0
 styles['Title'].textColor = colors.black
 styles['Title'].fontSize = 24
 styles['Title'].leading = 29
@@ -22,6 +24,7 @@ styles['Title'].spaceAfter = 22
 styles['Heading2'].textColor = colors.black
 styles['Heading2'].spaceBefore = 16
 styles['Heading2'].spaceAfter = 9
+styles['Heading2'].keepWithNext = True
 styles.add(ParagraphStyle(name='Cell',fontName='Helvetica',fontSize=8,leading=11,spaceAfter=0))
 
 def inline(text):
@@ -59,9 +62,8 @@ def generate(name):
         elif line.startswith('# '):story.append(Paragraph(inline(line[2:]),styles['Title']))
         elif line.startswith('## '):
             if name == 'manual-do-usuario' and line in ['## Clientes','## Erros e recuperação','## Aplicativo Android']: story.append(PageBreak())
-            if name == 'relatorio-executivo' and line == '## Cronograma planejado e executado': story.append(PageBreak())
             story.append(Paragraph(inline(line[3:]),styles['Heading2']))
-        elif line:story.append(KeepTogether([Paragraph(inline(line),styles['Normal'])]))
+        elif line:story.append(Paragraph(inline(line),styles['Normal']))
         i+=1
     doc=SimpleDocTemplate(str(source.with_suffix('.pdf')),pagesize=(595.28,841.89),leftMargin=44,rightMargin=44,topMargin=44,bottomMargin=48,title=lines[0].lstrip('# '),author='EasyShop')
     doc.build(story,onFirstPage=footer,onLaterPages=footer)

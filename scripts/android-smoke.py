@@ -102,6 +102,6 @@ expect('marina@example.com')
 screenshot('07-cliente-reinicio')
 files=adb('shell','run-as',PACKAGE,'ls','-l','files').decode()
 assert 'products.db' in files and 'customers.sqlite' in files,files
-result={'result':'PASS','device':adb('shell','getprop','ro.product.model').decode().strip(),'api':adb('shell','getprop','ro.build.version.sdk').decode().strip(),'abi':adb('shell','getprop','ro.product.cpu.abi').decode().strip(),'checks':['APK instalado e iniciado','produto LiteDB cadastrado e listado','preço zero rejeitado','cliente SQLite cadastrado e listado','email normalizado','email duplicado rejeitado','force-stop e reabertura mantêm os dois cadastros','dois arquivos de bancos no sandbox Android'],'databaseFiles':files,'physicalDevice':False}
+result={'result':'PASS','device':adb('shell','getprop','ro.product.model').decode().strip(),'api':adb('shell','getprop','ro.build.version.sdk').decode().strip(),'abi':adb('shell','getprop','ro.product.cpu.abi').decode().strip(),'checks':['APK instalado e iniciado','produto LiteDB cadastrado e listado','teclado preserva vírgula em 29,90','preço zero rejeitado','cliente SQLite cadastrado e listado','email normalizado','email duplicado rejeitado','force-stop e reabertura mantêm os dois cadastros','dois arquivos de bancos no sandbox Android'],'databaseFiles':files,'physicalDevice':False}
 (OUT/'results.json').write_text(json.dumps(result,indent=2,ensure_ascii=False),encoding='utf-8')
 print(json.dumps(result,indent=2,ensure_ascii=False))

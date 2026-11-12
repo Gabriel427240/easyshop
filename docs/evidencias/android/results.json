@@ -6,6 +6,7 @@
   "checks": [
     "APK instalado e iniciado",
     "produto LiteDB cadastrado e listado",
+    "teclado preserva vírgula em 29,90; assert executado antes do cadastro",
     "preço zero rejeitado",
     "cliente SQLite cadastrado e listado",
     "email normalizado",
@@ -13,6 +14,6 @@
     "force-stop e reabertura mantêm os dois cadastros",
     "dois arquivos de bancos no sandbox Android"
   ],
-  "databaseFiles": "total 68\r\n-rw------- 1 u0_a220 u0_a220 16384 2026-11-12 03:06 customers.sqlite\r\n-rw------- 1 u0_a220 u0_a220 32768 2026-11-12 03:05 products-log.db\r\n-rw------- 1 u0_a220 u0_a220  8192 2026-11-12 03:05 products.db\r\n",
+  "databaseFiles": "total 68\r\n-rw------- 1 u0_a220 u0_a220 16384 2026-11-12 03:13 customers.sqlite\r\n-rw------- 1 u0_a220 u0_a220 32768 2026-11-12 03:12 products-log.db\r\n-rw------- 1 u0_a220 u0_a220  8192 2026-11-12 03:12 products.db\r\n",
   "physicalDevice": false
 }

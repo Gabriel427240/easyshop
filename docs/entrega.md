@@ -22,7 +22,7 @@ Prazo acadêmico: **30/11/2026**. Implementação e validação técnica: **11/1
 
 Repositório público: https://github.com/Gabriel427240/easyshop
 
-APK para download: https://github.com/Gabriel427240/easyshop/releases/tag/v1.1.0-android
+APK para download: https://github.com/Gabriel427240/easyshop/releases/tag/v1.1.1-android
 
 Vídeo: **a confirmar pelo colaborador**.
 
