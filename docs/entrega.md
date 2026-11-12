@@ -9,6 +9,8 @@ Prazo acadêmico: **30/11/2026**. Implementação e validação técnica: **11/1
 - [x] Fluxos de interface automatizados e capturas reais desktop/mobile.
 - [x] Pacote autocontido Windows x64 gerado localmente.
 - [x] README, relatório, manual e roteiro do vídeo.
+- [x] Repositório público criado e código enviado à branch main.
+- [x] Persistência após reinício validada usando o executável empacotado.
 - [ ] Confirmar com professor se há exigência Android ou enunciado de logística/finanças.
 - [ ] Informar identificador GitHub do colaborador e autorizar convite.
 - [ ] Colaborador gravar, narrar, editar e publicar vídeo de 3 a 5 minutos.

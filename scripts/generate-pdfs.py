@@ -59,6 +59,7 @@ def generate(name):
         elif line.startswith('# '):story.append(Paragraph(inline(line[2:]),styles['Title']))
         elif line.startswith('## '):
             if name == 'manual-do-usuario' and line in ['## Clientes','## Erros e recuperação']: story.append(PageBreak())
+            if name == 'relatorio-executivo' and line == '## Cronograma planejado e executado': story.append(PageBreak())
             story.append(Paragraph(inline(line[3:]),styles['Heading2']))
         elif line:story.append(KeepTogether([Paragraph(inline(line),styles['Normal'])]))
         i+=1

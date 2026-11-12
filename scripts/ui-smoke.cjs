@@ -39,4 +39,3 @@ const fs = require('node:fs');
  fs.writeFileSync(output+'/ui-results.json',JSON.stringify({result:'PASS',checks:['estado vazio','cadastro produto 29,90','listagem produto','preço zero rejeitado','cadastro cliente','email normalizado','duplicidade rejeitada','viewport 390 sem overflow','sem erros JavaScript'],screenshots:'capturadas da aplicação em execução'},null,2));
  await browser.close();console.log('UI smoke: PASS');
 })().catch(e=>{console.error(e);process.exit(1);});
-
