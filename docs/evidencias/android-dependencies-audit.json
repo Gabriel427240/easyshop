@@ -1,0 +1,12 @@
+﻿{
+  "version": 1,
+  "parameters": "--vulnerable --include-transitive",
+  "sources": [
+    "https://api.nuget.org/v3/index.json"
+  ],
+  "projects": [
+    {
+      "path": "C:/Users/gabri/projeto facu/src/EasyShop.Android/EasyShop.Android.csproj"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "result": "PASS",
+  "device": "sdk_gphone64_x86_64",
+  "api": "36",
+  "abi": "x86_64",
+  "checks": [
+    "APK instalado e iniciado",
+    "produto LiteDB cadastrado e listado",
+    "preço zero rejeitado",
+    "cliente SQLite cadastrado e listado",
+    "email normalizado",
+    "email duplicado rejeitado",
+    "force-stop e reabertura mantêm os dois cadastros",
+    "dois arquivos de bancos no sandbox Android"
+  ],
+  "databaseFiles": "total 68\r\n-rw------- 1 u0_a220 u0_a220 16384 2026-11-12 03:06 customers.sqlite\r\n-rw------- 1 u0_a220 u0_a220 32768 2026-11-12 03:05 products-log.db\r\n-rw------- 1 u0_a220 u0_a220  8192 2026-11-12 03:05 products.db\r\n",
+  "physicalDevice": false
+}

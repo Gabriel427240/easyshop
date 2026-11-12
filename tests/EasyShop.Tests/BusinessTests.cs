@@ -62,5 +62,18 @@ public sealed class BusinessTests : IDisposable
         var results = await Task.WhenAll(Task.Run(TryAdd), Task.Run(TryAdd));
         Assert.Single(results, x => x); Assert.Single(await service.ListAsync());
     }
+    [Fact]
+    public async Task NormalizesWhitespaceInCustomerName()
+    {
+        var service = new CustomerService(new CustomerRepository(Path.Combine(directory, "customers.sqlite")));
+        var customer = await service.AddAsync(new CustomerInput(" Marina\t\nExemplo ", "marina@example.com"));
+        Assert.Equal("Marina Exemplo", customer.FullName);
+    }
+    [Fact]
+    public void RejectsEmptyAttributeName()
+    {
+        using var repository = new ProductRepository(Path.Combine(directory, "products.db"));
+        Assert.Throws<ArgumentException>(() => new ProductService(repository).Add(new Product { Name = "Caderno", Price = 10, Attributes = new() { { " ", "Verde" } } }));
+    }
     public void Dispose() => Directory.Delete(directory, true);
 }

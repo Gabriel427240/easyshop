@@ -4,17 +4,17 @@ Duração prevista: **4 minutos**. Responsável por gravação, narração, edi�
 
 | Tempo | Cena | Narração sugerida |
 | --- | --- | --- |
-| 0:00-0:25 | Título e interface | O EasyShop organiza produtos e clientes com persistência local em dois bancos: LiteDB e SQLite. |
+| 0:00-0:25 | Abrir APK no emulador | O EasyShop organiza produtos e clientes com persistência local em dois bancos: LiteDB e SQLite. Mostrar app Android aberto; versão web é alternativa desktop. |
 | 0:25-0:55 | Pastas no VS Code | A UI chama endpoints, que usam serviços para validar dados e repositórios para persistir. Mostrar Models, Services, Data e wwwroot. |
 | 0:55-1:45 | Produtos | Cadastrar Caderno pontilhado por 29,90, categorias Papelaria e Escritório, atributos Cor: Verde e Tamanho: A5. Mostrar listagem e preço formatado. Tentar preço zero e explicar validação. |
 | 1:45-2:35 | Clientes | Cadastrar Marina Exemplo, marina@example.com. Mostrar normalização e tentar repetir o e-mail. Explicar restrição única no SQLite. |
-| 2:35-3:05 | Reiniciar aplicativo | Encerrar e iniciar com a mesma pasta de dados. Mostrar que produtos e clientes continuam listados. |
-| 3:05-3:35 | Testes e documentação | Executar testes; mostrar resultado real, README e manual. Não afirmar teste Android ou físico. |
-| 3:35-4:00 | Escopo e entrega | Mostrar link real do repositório. Explicar execução local no navegador e que APK/logística/finanças não integram o escopo implementado. |
+| 2:35-3:05 | Reiniciar aplicativo Android | Forçar parada e reabrir o EasyShop sem limpar armazenamento. Mostrar que produtos e clientes continuam listados. |
+| 3:05-3:35 | Testes e documentação | Executar testes; mostrar resultado real, evidências do emulador, README e manual. Não alegar teste em aparelho físico. |
+| 3:35-4:00 | Escopo e entrega | Mostrar link real do repositório e APK. Explicar dados locais no Android e opção web; logística/finanças não integram o escopo confirmado. Dizer que o teste foi em emulador, não em aparelho físico. |
 
 ## Checklist de gravação
 
-- [ ] Executar a versão validada e preparar base isolada (`--DataDirectory=C:/Temp/EasyShopVideo`).
+- [ ] Instalar APK validado em emulador exclusivo para a gravação e usar base sem dados pessoais. Alternativa desktop: base isolada (`--DataDirectory=C:/Temp/EasyShopVideo`).
 - [ ] Usar somente dados fictícios acima; não exibir tokens, e-mails pessoais, notificações ou arquivos privados.
 - [ ] Capturar em 1920×1080 ou 1280×720, texto legível, áudio testado e cursor visível.
 - [ ] Gravar com OBS, ferramenta de captura do Windows ou equivalente; conferir começo e fim antes de editar.

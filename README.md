@@ -2,6 +2,8 @@
 
 Aplicação acadêmica para cadastro e listagem de produtos e clientes. Produtos são documentos no **LiteDB**; clientes são registros no **SQLite**. Interface em português com preço em reais, categorias e atributos opcionais.
 
+Também inclui **aplicativo Android nativo em C#**, com APK e bancos locais no próprio Android, sem depender do servidor Windows. Consulte [Android e emulador](docs/android.md) e a [auditoria do briefing](docs/auditoria-briefing.md).
+
 ## Executar no Windows
 
 Pré-requisitos: SDK .NET 10, navegador moderno e internet apenas para restaurar pacotes. O SDK foi instalado neste computador em `%LOCALAPPDATA%/EasyShop/dotnet`; o script encontra essa instalação ou o `dotnet` do PATH.
@@ -28,6 +30,8 @@ Edição, exclusão, autenticação, sincronização e exportação estão fora 
 ```mermaid
 flowchart LR
  UI[UI HTML CSS JavaScript] --> API[Endpoints ASP.NET Core]
+ AND[UI Android nativa] --> PS
+ AND --> CS
  API --> PS[ProductService]
  API --> CS[CustomerService]
  PS --> PR[ProductRepository]
@@ -36,7 +40,7 @@ flowchart LR
  CR --> S[(SQLite customers.sqlite)]
 ```
 
-`src/EasyShop/wwwroot`: interface; `Models`: entidades; `Services`: validações; `Data`: repositórios e conexões. Dependências injetadas pelo ASP.NET Core. LiteDB oferece API síncrona, com instância singleton descartada no encerramento. SQLite usa conexões por operação, comandos parametrizados e API assíncrona; o driver pode executar I/O de forma síncrona internamente.
+`src/EasyShop/wwwroot`: interface web; `Models`: entidades; `Services`: validações; `Data`: repositórios e conexões. `src/EasyShop.Android/MainActivity.cs`: interface Android nativa. O projeto Android compila os mesmos arquivos de Models, Services e Data por links de compilação, sem duplicar as regras. Dependências injetadas pelo ASP.NET Core na versão web e compostas explicitamente na Activity Android. LiteDB oferece API síncrona; no Android as operações são executadas em tarefa fora da UI. SQLite usa conexões por operação, comandos parametrizados e API assíncrona; o driver pode executar I/O de forma síncrona internamente.
 
 ## Dados locais e configuração
 
@@ -61,7 +65,16 @@ Os testes usam pastas temporárias distintas para validações, reabertura dos b
 
 ## Empacotamento real
 
-Alvo: servidor local ASP.NET Core para Windows x64 com UI no navegador. **Não é APK e não tem alvo Android.** Não foi fornecida exigência específica de plataforma; a escolha atende LiteDB e SQLite sem workloads móveis. Se Android for obrigatório, será necessária uma adaptação, ainda não concluída.
+Dois alvos: servidor local ASP.NET Core para Windows x64 com UI no navegador e aplicativo nativo .NET for Android. A versão Android foi acrescentada após solicitação expressa de execução em emulador. O APK inclui x86_64 para emulador e arm64; o teste real registrado cobre Android 16/API 36 x86_64. Não houve teste em aparelho físico.
+
+Para Android, com SDK Android, JDK e workload `android` instalados:
+
+```powershell
+./scripts/build-android.ps1
+./scripts/install-android.ps1
+```
+
+O primeiro comando gera `artifacts/android/br.edu.easyshop-Signed.apk`; o segundo instala e abre no único emulador conectado. A assinatura é de desenvolvimento, adequada à avaliação por instalação direta, não à publicação em loja. Os dados Android ficam no sandbox do app, separados dos dados Windows. A solução `EasyShop.slnx` mantém o alvo desktop/testes; o projeto Android é compilado separadamente para não obrigar usuários desktop a instalar o workload móvel.
 
 ```powershell
 ./scripts/dotnet.ps1 publish src/EasyShop -c Release -r win-x64 --self-contained true --output artifacts/publish/win-x64
@@ -86,6 +99,6 @@ Execute `EasyShop.exe` dentro dessa pasta e abra a URL local. Preserve todos os 
 - [Checklist e links finais](docs/entrega.md)
 - [Licenças de dependências](docs/dependencias.md)
 
-O aluno supervisiona a entrega. O colaborador grava, narra, edita e publica o vídeo de 3 a 5 minutos; seu identificador GitHub ainda precisa ser informado. Não há vídeo publicado por esta implementação. Os módulos de logística/finanças estão **não aplicáveis ao escopo EasyShop - pendentes de confirmação**.
+O aluno supervisiona a entrega. O colaborador grava, narra, edita e publica o vídeo de 3 a 5 minutos; seu identificador GitHub ainda precisa ser informado. Não há vídeo publicado por esta implementação. Os módulos de logística/finanças estão **não aplicáveis ao escopo EasyShop - pendentes de confirmação**. O alvo Android agora integra a entrega EasyShop.
 
 Prazo informado no briefing: **30/11/2026**. Consulte o checklist para as pendências acadêmicas e os resultados efetivamente verificados.

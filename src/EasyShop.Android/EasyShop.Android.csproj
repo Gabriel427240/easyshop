@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0-android</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <SupportedOSPlatformVersion>26</SupportedOSPlatformVersion>
+    <ApplicationId>br.edu.easyshop</ApplicationId>
+    <ApplicationTitle>EasyShop</ApplicationTitle>
+    <ApplicationVersion>1</ApplicationVersion>
+    <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+    <AndroidPackageFormats>apk</AndroidPackageFormats>
+    <RuntimeIdentifiers>android-x64;android-arm64</RuntimeIdentifiers>
+    <PublishTrimmed>false</PublishTrimmed>
+    <RunAOTCompilation>false</RunAOTCompilation>
+    <EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="LiteDB" Version="5.0.21" />
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="10.0.15" />
+    <Compile Include="../EasyShop/Models/*.cs" Link="Models/%(Filename)%(Extension)" />
+    <Compile Include="../EasyShop/Services/*.cs" Link="Services/%(Filename)%(Extension)" />
+    <Compile Include="../EasyShop/Data/*.cs" Link="Data/%(Filename)%(Extension)" />
+  </ItemGroup>
+</Project>

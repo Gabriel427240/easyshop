@@ -6,7 +6,7 @@ Consulta realizada nos metadados NuGet restaurados nesta implementação. Versõ
 | --- | --- | --- |
 | LiteDB | 5.0.21 | MIT |
 | Microsoft.Data.Sqlite e Core | 10.0.15 | MIT |
-| SQLitePCLRaw bundle/core/provider/lib | 2.1.13 | Apache-2.0 |
+| SQLitePCLRaw bundle/core/provider/lib e lib.android | 2.1.13 | Apache-2.0 |
 | Microsoft.NET.Test.Sdk | 17.14.1 | MIT |
 | xUnit | 2.9.3 | Apache-2.0 |
 | xunit.runner.visualstudio | 3.1.1 | Apache-2.0 |

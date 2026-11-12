@@ -12,3 +12,23 @@ jobs:
       - run: dotnet build EasyShop.slnx -c Release --no-restore
       - run: dotnet test EasyShop.slnx -c Release --no-build
       - run: dotnet format EasyShop.slnx --verify-no-changes --no-restore
+  android:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - uses: android-actions/setup-android@v3
+      - run: sdkmanager "platforms;android-36" "build-tools;36.0.0"
+      - run: dotnet workload install android --skip-manifest-update
+      - shell: pwsh
+        run: ./scripts/build-android.ps1
+      - uses: actions/upload-artifact@v4
+        with:
+          name: easyshop-android-apk
+          path: artifacts/android/*Signed.apk

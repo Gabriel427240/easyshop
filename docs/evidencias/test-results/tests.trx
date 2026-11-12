@@ -1,93 +1,105 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TestRun id="a9e26db6-7561-4de6-a009-fa5adf97a651" name="gabri@DESKTOP-LBO32P5 2026-11-11 23:54:18" runUser="DESKTOP-LBO32P5\gabri" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
-  <Times creation="2026-11-11T23:54:18.9878092-03:00" queuing="2026-11-11T23:54:18.9878093-03:00" start="2026-11-11T23:54:18.2307566-03:00" finish="2026-11-11T23:54:19.2341254-03:00" />
-  <TestSettings name="default" id="d7221207-d854-4e37-bf47-7e15ba00e319">
-    <Deployment runDeploymentRoot="gabri_DESKTOP-LBO32P5_2026-11-11_23_54_18" />
+<TestRun id="fdbc352c-0e9a-4d2d-bf13-3b9c7044d4a9" name="gabri@DESKTOP-LBO32P5 2026-11-12 00:02:01" runUser="DESKTOP-LBO32P5\gabri" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-11-12T00:02:01.0186253-03:00" queuing="2026-11-12T00:02:01.0186260-03:00" start="2026-11-12T00:01:58.3677520-03:00" finish="2026-11-12T00:02:01.5434653-03:00" />
+  <TestSettings name="default" id="8231fbeb-9eea-4ee1-a4d3-4daaf72de3ec">
+    <Deployment runDeploymentRoot="gabri_DESKTOP-LBO32P5_2026-11-12_00_02_01" />
   </TestSettings>
   <Results>
-    <UnitTestResult executionId="63b3909a-8b45-4a3c-b3df-733ba47e4a58" testId="c3559d6b-5208-ed32-76d6-487258f80e6b" testName="EasyShop.Tests.BusinessTests.RejectsInvalidProducts(name: &quot;Caderno&quot;, price: 1,234)" computerName="DESKTOP-LBO32P5" duration="00:00:00.0604727" startTime="2026-11-11T23:54:18.8327695-03:00" endTime="2026-11-11T23:54:18.8924386-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="63b3909a-8b45-4a3c-b3df-733ba47e4a58" />
-    <UnitTestResult executionId="706679d1-94ce-4b22-ad40-609caa3871f3" testId="60fc4e75-ca5c-80f0-ffaf-983d265e58ad" testName="EasyShop.Tests.BusinessTests.DatabaseProtectsAgainstConcurrentDuplicateEmails" computerName="DESKTOP-LBO32P5" duration="00:00:00.1698446" startTime="2026-11-11T23:54:18.9604691-03:00" endTime="2026-11-11T23:54:19.1074868-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="706679d1-94ce-4b22-ad40-609caa3871f3" />
-    <UnitTestResult executionId="8755536e-2d5d-4115-a607-56722b5caa29" testId="f18d3578-97e6-2ce0-ce28-ebb21265bbf3" testName="EasyShop.Tests.BusinessTests.RejectsInvalidCustomers(name: &quot;Marina Exemplo&quot;, email: &quot;inválido&quot;)" computerName="DESKTOP-LBO32P5" duration="00:00:00.0039279" startTime="2026-11-11T23:54:18.8285445-03:00" endTime="2026-11-11T23:54:18.8286150-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8755536e-2d5d-4115-a607-56722b5caa29" />
-    <UnitTestResult executionId="c8e65adf-18e2-4ba6-a57c-9ba6dc10351e" testId="57552896-56cb-be34-385c-5276e3bb993b" testName="EasyShop.Tests.BusinessTests.RejectsInvalidCustomers(name: &quot;Marina&quot;, email: &quot;marina@example.com&quot;)" computerName="DESKTOP-LBO32P5" duration="00:00:00.0041779" startTime="2026-11-11T23:54:18.8286846-03:00" endTime="2026-11-11T23:54:18.8315691-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c8e65adf-18e2-4ba6-a57c-9ba6dc10351e" />
-    <UnitTestResult executionId="c79d36b8-0d80-46f4-bb0c-cd3f08c5ef28" testId="36308a0e-9f6c-bfbf-0a77-f5d8844c16d7" testName="EasyShop.Tests.BusinessTests.NormalizesAndPersistsCustomersAndRejectsDuplicateEmail" computerName="DESKTOP-LBO32P5" duration="00:00:00.0192244" startTime="2026-11-11T23:54:18.9159268-03:00" endTime="2026-11-11T23:54:18.9350520-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c79d36b8-0d80-46f4-bb0c-cd3f08c5ef28" />
-    <UnitTestResult executionId="d644e417-da20-4209-8466-e7ac848e56d4" testId="7a9c8860-48d5-38e7-360a-ed4257ecdd47" testName="EasyShop.Tests.BusinessTests.RejectsInvalidProducts(name: &quot;Caderno&quot;, price: 0)" computerName="DESKTOP-LBO32P5" duration="00:00:00.0084247" startTime="2026-11-11T23:54:18.8925755-03:00" endTime="2026-11-11T23:54:18.9009571-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d644e417-da20-4209-8466-e7ac848e56d4" />
-    <UnitTestResult executionId="29dff7c6-7ab1-4ad8-8b78-4adf01e686a8" testId="2361edf3-c1f6-0834-e093-436cc4e29dcf" testName="EasyShop.Tests.BusinessTests.RejectsInvalidProducts(name: &quot;Caderno&quot;, price: -10)" computerName="DESKTOP-LBO32P5" duration="00:00:00.0067412" startTime="2026-11-11T23:54:18.9010896-03:00" endTime="2026-11-11T23:54:18.9077776-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="29dff7c6-7ab1-4ad8-8b78-4adf01e686a8" />
-    <UnitTestResult executionId="89ad3def-a905-4b96-a102-6cbb4a2c266d" testId="86f81f73-22a8-c296-cee8-d428fb9ec9fc" testName="EasyShop.Tests.BusinessTests.RejectsInvalidCustomers(name: &quot;Marina Exemplo&quot;, email: &quot;Nome &lt;marina@example.com&gt;&quot;)" computerName="DESKTOP-LBO32P5" duration="00:00:00.0045252" startTime="2026-11-11T23:54:18.8279192-03:00" endTime="2026-11-11T23:54:18.8280181-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="89ad3def-a905-4b96-a102-6cbb4a2c266d" />
-    <UnitTestResult executionId="f00bcc18-de62-42b9-a2af-05f7e6dc8e96" testId="99a54099-1018-9335-ac10-6caf1cff66f9" testName="EasyShop.Tests.BusinessTests.ProductPersistsAfterReopening" computerName="DESKTOP-LBO32P5" duration="00:00:00.0725417" startTime="2026-11-11T23:54:19.1087788-03:00" endTime="2026-11-11T23:54:19.1813671-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f00bcc18-de62-42b9-a2af-05f7e6dc8e96" />
-    <UnitTestResult executionId="3475f9ac-200b-4fba-ab53-1c6d8daa4884" testId="2832765a-2007-f652-35bd-36d9dd178f64" testName="EasyShop.Tests.BusinessTests.RejectsInvalidCustomers(name: &quot;&quot;, email: &quot;&quot;)" computerName="DESKTOP-LBO32P5" duration="00:00:00.0320570" startTime="2026-11-11T23:54:18.7799592-03:00" endTime="2026-11-11T23:54:18.8185915-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3475f9ac-200b-4fba-ab53-1c6d8daa4884" />
-    <UnitTestResult executionId="4f58bd92-270c-45c2-822f-bee468b9b1cd" testId="26e8abc6-e441-3393-99e7-ca0b6deefb9f" testName="EasyShop.Tests.BusinessTests.RejectsInvalidProducts(name: &quot;&quot;, price: 10)" computerName="DESKTOP-LBO32P5" duration="00:00:00.0078565" startTime="2026-11-11T23:54:18.9078902-03:00" endTime="2026-11-11T23:54:18.9157304-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4f58bd92-270c-45c2-822f-bee468b9b1cd" />
+    <UnitTestResult executionId="38df9eec-1a3e-40a3-a5fc-957a78835726" testId="36308a0e-9f6c-bfbf-0a77-f5d8844c16d7" testName="EasyShop.Tests.BusinessTests.NormalizesAndPersistsCustomersAndRejectsDuplicateEmail" computerName="DESKTOP-LBO32P5" duration="00:00:00.0339132" startTime="2026-11-12T00:02:00.9663551-03:00" endTime="2026-11-12T00:02:00.9664941-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="38df9eec-1a3e-40a3-a5fc-957a78835726" />
+    <UnitTestResult executionId="20b3d5b3-8a57-4b44-9011-4cc36db94e53" testId="60fc4e75-ca5c-80f0-ffaf-983d265e58ad" testName="EasyShop.Tests.BusinessTests.DatabaseProtectsAgainstConcurrentDuplicateEmails" computerName="DESKTOP-LBO32P5" duration="00:00:00.1921790" startTime="2026-11-12T00:02:00.9909618-03:00" endTime="2026-11-12T00:02:01.1867810-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="20b3d5b3-8a57-4b44-9011-4cc36db94e53" />
+    <UnitTestResult executionId="162c7576-f222-4215-95f3-c3a6572919cb" testId="f18d3578-97e6-2ce0-ce28-ebb21265bbf3" testName="EasyShop.Tests.BusinessTests.RejectsInvalidCustomers(name: &quot;Marina Exemplo&quot;, email: &quot;inválido&quot;)" computerName="DESKTOP-LBO32P5" duration="00:00:00.0398248" startTime="2026-11-12T00:02:00.6390333-03:00" endTime="2026-11-12T00:02:00.6744154-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="162c7576-f222-4215-95f3-c3a6572919cb" />
+    <UnitTestResult executionId="79310d01-a672-4b24-8721-8078b1b1e3eb" testId="c3559d6b-5208-ed32-76d6-487258f80e6b" testName="EasyShop.Tests.BusinessTests.RejectsInvalidProducts(name: &quot;Caderno&quot;, price: 1,234)" computerName="DESKTOP-LBO32P5" duration="00:00:00.1871330" startTime="2026-11-12T00:02:00.6884916-03:00" endTime="2026-11-12T00:02:00.8759368-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="79310d01-a672-4b24-8721-8078b1b1e3eb" />
+    <UnitTestResult executionId="e4a03d8f-3dbe-4e82-8d59-fb88065571ac" testId="57552896-56cb-be34-385c-5276e3bb993b" testName="EasyShop.Tests.BusinessTests.RejectsInvalidCustomers(name: &quot;Marina&quot;, email: &quot;marina@example.com&quot;)" computerName="DESKTOP-LBO32P5" duration="00:00:00.0136910" startTime="2026-11-12T00:02:00.6747116-03:00" endTime="2026-11-12T00:02:00.6853863-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e4a03d8f-3dbe-4e82-8d59-fb88065571ac" />
+    <UnitTestResult executionId="cc385108-c36d-4402-a1e8-886423e65c09" testId="99a54099-1018-9335-ac10-6caf1cff66f9" testName="EasyShop.Tests.BusinessTests.ProductPersistsAfterReopening" computerName="DESKTOP-LBO32P5" duration="00:00:00.1775874" startTime="2026-11-12T00:02:01.2334855-03:00" endTime="2026-11-12T00:02:01.4110586-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cc385108-c36d-4402-a1e8-886423e65c09" />
+    <UnitTestResult executionId="ca6ed269-4de5-4b6d-8105-2bd233444628" testId="7a9c8860-48d5-38e7-360a-ed4257ecdd47" testName="EasyShop.Tests.BusinessTests.RejectsInvalidProducts(name: &quot;Caderno&quot;, price: 0)" computerName="DESKTOP-LBO32P5" duration="00:00:00.0174824" startTime="2026-11-12T00:02:00.8761944-03:00" endTime="2026-11-12T00:02:00.8949576-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ca6ed269-4de5-4b6d-8105-2bd233444628" />
+    <UnitTestResult executionId="9639fbbb-de45-4ef7-9561-c8be7a27c475" testId="7975d921-33a9-4618-ef51-74fc3efab63c" testName="EasyShop.Tests.BusinessTests.RejectsEmptyAttributeName" computerName="DESKTOP-LBO32P5" duration="00:00:00.0439361" startTime="2026-11-12T00:02:01.1889992-03:00" endTime="2026-11-12T00:02:01.2331802-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9639fbbb-de45-4ef7-9561-c8be7a27c475" />
+    <UnitTestResult executionId="10afa6f7-8983-4a18-bc77-edcdfe562b63" testId="26e8abc6-e441-3393-99e7-ca0b6deefb9f" testName="EasyShop.Tests.BusinessTests.RejectsInvalidProducts(name: &quot;&quot;, price: 10)" computerName="DESKTOP-LBO32P5" duration="00:00:00.0117842" startTime="2026-11-12T00:02:00.9072215-03:00" endTime="2026-11-12T00:02:00.9189489-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="10afa6f7-8983-4a18-bc77-edcdfe562b63" />
+    <UnitTestResult executionId="ae94678b-6c53-446b-89ff-5d7b080ad132" testId="2361edf3-c1f6-0834-e093-436cc4e29dcf" testName="EasyShop.Tests.BusinessTests.RejectsInvalidProducts(name: &quot;Caderno&quot;, price: -10)" computerName="DESKTOP-LBO32P5" duration="00:00:00.0133303" startTime="2026-11-12T00:02:00.8951800-03:00" endTime="2026-11-12T00:02:00.9070012-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ae94678b-6c53-446b-89ff-5d7b080ad132" />
+    <UnitTestResult executionId="646cd646-abbc-4b67-98d0-23e4bfc95788" testId="2832765a-2007-f652-35bd-36d9dd178f64" testName="EasyShop.Tests.BusinessTests.RejectsInvalidCustomers(name: &quot;&quot;, email: &quot;&quot;)" computerName="DESKTOP-LBO32P5" duration="00:00:00.1204043" startTime="2026-11-12T00:02:00.5097791-03:00" endTime="2026-11-12T00:02:00.6223007-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="646cd646-abbc-4b67-98d0-23e4bfc95788" />
+    <UnitTestResult executionId="c4eab605-76b7-40e1-886d-b66c10a942dc" testId="86f81f73-22a8-c296-cee8-d428fb9ec9fc" testName="EasyShop.Tests.BusinessTests.RejectsInvalidCustomers(name: &quot;Marina Exemplo&quot;, email: &quot;Nome &lt;marina@example.com&gt;&quot;)" computerName="DESKTOP-LBO32P5" duration="00:00:00.0087255" startTime="2026-11-12T00:02:00.6374317-03:00" endTime="2026-11-12T00:02:00.6376538-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c4eab605-76b7-40e1-886d-b66c10a942dc" />
+    <UnitTestResult executionId="ea808017-a3eb-4790-94ff-5131848e26f0" testId="c95097de-24c6-2f68-d88c-6b6c88e4437d" testName="EasyShop.Tests.BusinessTests.NormalizesWhitespaceInCustomerName" computerName="DESKTOP-LBO32P5" duration="00:00:00.0368334" startTime="2026-11-12T00:02:00.9668551-03:00" endTime="2026-11-12T00:02:00.9906567-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ea808017-a3eb-4790-94ff-5131848e26f0" />
   </Results>
   <TestDefinitions>
     <UnitTest name="EasyShop.Tests.BusinessTests.RejectsInvalidCustomers(name: &quot;&quot;, email: &quot;&quot;)" storage="c:\users\gabri\projeto facu\tests\easyshop.tests\bin\release\net10.0\easyshop.tests.dll" id="2832765a-2007-f652-35bd-36d9dd178f64">
-      <Execution id="3475f9ac-200b-4fba-ab53-1c6d8daa4884" />
+      <Execution id="646cd646-abbc-4b67-98d0-23e4bfc95788" />
       <TestMethod codeBase="C:\Users\gabri\projeto facu\tests\EasyShop.Tests\bin\Release\net10.0\EasyShop.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="EasyShop.Tests.BusinessTests" name="RejectsInvalidCustomers" />
     </UnitTest>
     <UnitTest name="EasyShop.Tests.BusinessTests.RejectsInvalidProducts(name: &quot;Caderno&quot;, price: 0)" storage="c:\users\gabri\projeto facu\tests\easyshop.tests\bin\release\net10.0\easyshop.tests.dll" id="7a9c8860-48d5-38e7-360a-ed4257ecdd47">
-      <Execution id="d644e417-da20-4209-8466-e7ac848e56d4" />
+      <Execution id="ca6ed269-4de5-4b6d-8105-2bd233444628" />
       <TestMethod codeBase="C:\Users\gabri\projeto facu\tests\EasyShop.Tests\bin\Release\net10.0\EasyShop.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="EasyShop.Tests.BusinessTests" name="RejectsInvalidProducts" />
     </UnitTest>
     <UnitTest name="EasyShop.Tests.BusinessTests.NormalizesAndPersistsCustomersAndRejectsDuplicateEmail" storage="c:\users\gabri\projeto facu\tests\easyshop.tests\bin\release\net10.0\easyshop.tests.dll" id="36308a0e-9f6c-bfbf-0a77-f5d8844c16d7">
-      <Execution id="c79d36b8-0d80-46f4-bb0c-cd3f08c5ef28" />
+      <Execution id="38df9eec-1a3e-40a3-a5fc-957a78835726" />
       <TestMethod codeBase="C:\Users\gabri\projeto facu\tests\EasyShop.Tests\bin\Release\net10.0\EasyShop.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="EasyShop.Tests.BusinessTests" name="NormalizesAndPersistsCustomersAndRejectsDuplicateEmail" />
     </UnitTest>
     <UnitTest name="EasyShop.Tests.BusinessTests.ProductPersistsAfterReopening" storage="c:\users\gabri\projeto facu\tests\easyshop.tests\bin\release\net10.0\easyshop.tests.dll" id="99a54099-1018-9335-ac10-6caf1cff66f9">
-      <Execution id="f00bcc18-de62-42b9-a2af-05f7e6dc8e96" />
+      <Execution id="cc385108-c36d-4402-a1e8-886423e65c09" />
       <TestMethod codeBase="C:\Users\gabri\projeto facu\tests\EasyShop.Tests\bin\Release\net10.0\EasyShop.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="EasyShop.Tests.BusinessTests" name="ProductPersistsAfterReopening" />
     </UnitTest>
     <UnitTest name="EasyShop.Tests.BusinessTests.RejectsInvalidCustomers(name: &quot;Marina Exemplo&quot;, email: &quot;Nome &lt;marina@example.com&gt;&quot;)" storage="c:\users\gabri\projeto facu\tests\easyshop.tests\bin\release\net10.0\easyshop.tests.dll" id="86f81f73-22a8-c296-cee8-d428fb9ec9fc">
-      <Execution id="89ad3def-a905-4b96-a102-6cbb4a2c266d" />
+      <Execution id="c4eab605-76b7-40e1-886d-b66c10a942dc" />
       <TestMethod codeBase="C:\Users\gabri\projeto facu\tests\EasyShop.Tests\bin\Release\net10.0\EasyShop.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="EasyShop.Tests.BusinessTests" name="RejectsInvalidCustomers" />
     </UnitTest>
     <UnitTest name="EasyShop.Tests.BusinessTests.RejectsInvalidProducts(name: &quot;&quot;, price: 10)" storage="c:\users\gabri\projeto facu\tests\easyshop.tests\bin\release\net10.0\easyshop.tests.dll" id="26e8abc6-e441-3393-99e7-ca0b6deefb9f">
-      <Execution id="4f58bd92-270c-45c2-822f-bee468b9b1cd" />
+      <Execution id="10afa6f7-8983-4a18-bc77-edcdfe562b63" />
       <TestMethod codeBase="C:\Users\gabri\projeto facu\tests\EasyShop.Tests\bin\Release\net10.0\EasyShop.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="EasyShop.Tests.BusinessTests" name="RejectsInvalidProducts" />
     </UnitTest>
     <UnitTest name="EasyShop.Tests.BusinessTests.RejectsInvalidCustomers(name: &quot;Marina Exemplo&quot;, email: &quot;inválido&quot;)" storage="c:\users\gabri\projeto facu\tests\easyshop.tests\bin\release\net10.0\easyshop.tests.dll" id="f18d3578-97e6-2ce0-ce28-ebb21265bbf3">
-      <Execution id="8755536e-2d5d-4115-a607-56722b5caa29" />
+      <Execution id="162c7576-f222-4215-95f3-c3a6572919cb" />
       <TestMethod codeBase="C:\Users\gabri\projeto facu\tests\EasyShop.Tests\bin\Release\net10.0\EasyShop.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="EasyShop.Tests.BusinessTests" name="RejectsInvalidCustomers" />
     </UnitTest>
+    <UnitTest name="EasyShop.Tests.BusinessTests.RejectsEmptyAttributeName" storage="c:\users\gabri\projeto facu\tests\easyshop.tests\bin\release\net10.0\easyshop.tests.dll" id="7975d921-33a9-4618-ef51-74fc3efab63c">
+      <Execution id="9639fbbb-de45-4ef7-9561-c8be7a27c475" />
+      <TestMethod codeBase="C:\Users\gabri\projeto facu\tests\EasyShop.Tests\bin\Release\net10.0\EasyShop.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="EasyShop.Tests.BusinessTests" name="RejectsEmptyAttributeName" />
+    </UnitTest>
     <UnitTest name="EasyShop.Tests.BusinessTests.RejectsInvalidProducts(name: &quot;Caderno&quot;, price: 1,234)" storage="c:\users\gabri\projeto facu\tests\easyshop.tests\bin\release\net10.0\easyshop.tests.dll" id="c3559d6b-5208-ed32-76d6-487258f80e6b">
-      <Execution id="63b3909a-8b45-4a3c-b3df-733ba47e4a58" />
+      <Execution id="79310d01-a672-4b24-8721-8078b1b1e3eb" />
       <TestMethod codeBase="C:\Users\gabri\projeto facu\tests\EasyShop.Tests\bin\Release\net10.0\EasyShop.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="EasyShop.Tests.BusinessTests" name="RejectsInvalidProducts" />
     </UnitTest>
+    <UnitTest name="EasyShop.Tests.BusinessTests.NormalizesWhitespaceInCustomerName" storage="c:\users\gabri\projeto facu\tests\easyshop.tests\bin\release\net10.0\easyshop.tests.dll" id="c95097de-24c6-2f68-d88c-6b6c88e4437d">
+      <Execution id="ea808017-a3eb-4790-94ff-5131848e26f0" />
+      <TestMethod codeBase="C:\Users\gabri\projeto facu\tests\EasyShop.Tests\bin\Release\net10.0\EasyShop.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="EasyShop.Tests.BusinessTests" name="NormalizesWhitespaceInCustomerName" />
+    </UnitTest>
     <UnitTest name="EasyShop.Tests.BusinessTests.DatabaseProtectsAgainstConcurrentDuplicateEmails" storage="c:\users\gabri\projeto facu\tests\easyshop.tests\bin\release\net10.0\easyshop.tests.dll" id="60fc4e75-ca5c-80f0-ffaf-983d265e58ad">
-      <Execution id="706679d1-94ce-4b22-ad40-609caa3871f3" />
+      <Execution id="20b3d5b3-8a57-4b44-9011-4cc36db94e53" />
       <TestMethod codeBase="C:\Users\gabri\projeto facu\tests\EasyShop.Tests\bin\Release\net10.0\EasyShop.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="EasyShop.Tests.BusinessTests" name="DatabaseProtectsAgainstConcurrentDuplicateEmails" />
     </UnitTest>
     <UnitTest name="EasyShop.Tests.BusinessTests.RejectsInvalidCustomers(name: &quot;Marina&quot;, email: &quot;marina@example.com&quot;)" storage="c:\users\gabri\projeto facu\tests\easyshop.tests\bin\release\net10.0\easyshop.tests.dll" id="57552896-56cb-be34-385c-5276e3bb993b">
-      <Execution id="c8e65adf-18e2-4ba6-a57c-9ba6dc10351e" />
+      <Execution id="e4a03d8f-3dbe-4e82-8d59-fb88065571ac" />
       <TestMethod codeBase="C:\Users\gabri\projeto facu\tests\EasyShop.Tests\bin\Release\net10.0\EasyShop.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="EasyShop.Tests.BusinessTests" name="RejectsInvalidCustomers" />
     </UnitTest>
     <UnitTest name="EasyShop.Tests.BusinessTests.RejectsInvalidProducts(name: &quot;Caderno&quot;, price: -10)" storage="c:\users\gabri\projeto facu\tests\easyshop.tests\bin\release\net10.0\easyshop.tests.dll" id="2361edf3-c1f6-0834-e093-436cc4e29dcf">
-      <Execution id="29dff7c6-7ab1-4ad8-8b78-4adf01e686a8" />
+      <Execution id="ae94678b-6c53-446b-89ff-5d7b080ad132" />
       <TestMethod codeBase="C:\Users\gabri\projeto facu\tests\EasyShop.Tests\bin\Release\net10.0\EasyShop.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="EasyShop.Tests.BusinessTests" name="RejectsInvalidProducts" />
     </UnitTest>
   </TestDefinitions>
   <TestEntries>
-    <TestEntry testId="c3559d6b-5208-ed32-76d6-487258f80e6b" executionId="63b3909a-8b45-4a3c-b3df-733ba47e4a58" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="60fc4e75-ca5c-80f0-ffaf-983d265e58ad" executionId="706679d1-94ce-4b22-ad40-609caa3871f3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="f18d3578-97e6-2ce0-ce28-ebb21265bbf3" executionId="8755536e-2d5d-4115-a607-56722b5caa29" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="57552896-56cb-be34-385c-5276e3bb993b" executionId="c8e65adf-18e2-4ba6-a57c-9ba6dc10351e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="36308a0e-9f6c-bfbf-0a77-f5d8844c16d7" executionId="c79d36b8-0d80-46f4-bb0c-cd3f08c5ef28" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="7a9c8860-48d5-38e7-360a-ed4257ecdd47" executionId="d644e417-da20-4209-8466-e7ac848e56d4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="2361edf3-c1f6-0834-e093-436cc4e29dcf" executionId="29dff7c6-7ab1-4ad8-8b78-4adf01e686a8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="86f81f73-22a8-c296-cee8-d428fb9ec9fc" executionId="89ad3def-a905-4b96-a102-6cbb4a2c266d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="99a54099-1018-9335-ac10-6caf1cff66f9" executionId="f00bcc18-de62-42b9-a2af-05f7e6dc8e96" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="2832765a-2007-f652-35bd-36d9dd178f64" executionId="3475f9ac-200b-4fba-ab53-1c6d8daa4884" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="26e8abc6-e441-3393-99e7-ca0b6deefb9f" executionId="4f58bd92-270c-45c2-822f-bee468b9b1cd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="36308a0e-9f6c-bfbf-0a77-f5d8844c16d7" executionId="38df9eec-1a3e-40a3-a5fc-957a78835726" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="60fc4e75-ca5c-80f0-ffaf-983d265e58ad" executionId="20b3d5b3-8a57-4b44-9011-4cc36db94e53" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f18d3578-97e6-2ce0-ce28-ebb21265bbf3" executionId="162c7576-f222-4215-95f3-c3a6572919cb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c3559d6b-5208-ed32-76d6-487258f80e6b" executionId="79310d01-a672-4b24-8721-8078b1b1e3eb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="57552896-56cb-be34-385c-5276e3bb993b" executionId="e4a03d8f-3dbe-4e82-8d59-fb88065571ac" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="99a54099-1018-9335-ac10-6caf1cff66f9" executionId="cc385108-c36d-4402-a1e8-886423e65c09" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7a9c8860-48d5-38e7-360a-ed4257ecdd47" executionId="ca6ed269-4de5-4b6d-8105-2bd233444628" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7975d921-33a9-4618-ef51-74fc3efab63c" executionId="9639fbbb-de45-4ef7-9561-c8be7a27c475" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="26e8abc6-e441-3393-99e7-ca0b6deefb9f" executionId="10afa6f7-8983-4a18-bc77-edcdfe562b63" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2361edf3-c1f6-0834-e093-436cc4e29dcf" executionId="ae94678b-6c53-446b-89ff-5d7b080ad132" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2832765a-2007-f652-35bd-36d9dd178f64" executionId="646cd646-abbc-4b67-98d0-23e4bfc95788" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="86f81f73-22a8-c296-cee8-d428fb9ec9fc" executionId="c4eab605-76b7-40e1-886d-b66c10a942dc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c95097de-24c6-2f68-d88c-6b6c88e4437d" executionId="ea808017-a3eb-4790-94ff-5131848e26f0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
   </TestEntries>
   <TestLists>
     <TestList name="Resultados que não estão em uma lista" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
     <TestList name="Todos os resultados carregados" id="19431567-8539-422a-85d7-44ee4e166bda" />
   </TestLists>
   <ResultSummary outcome="Completed">
-    <Counters total="11" executed="11" passed="11" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Counters total="13" executed="13" passed="13" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
     <Output>
-      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v3.1.1+bf6400fd51 (64-bit .NET 10.0.15)&#xD;
-[xUnit.net 00:00:00.08]   Discovering: EasyShop.Tests&#xD;
-[xUnit.net 00:00:00.13]   Discovered:  EasyShop.Tests&#xD;
-[xUnit.net 00:00:00.15]   Starting:    EasyShop.Tests&#xD;
-[xUnit.net 00:00:00.58]   Finished:    EasyShop.Tests&#xD;
+      <StdOut>[xUnit.net 00:00:00.02] xUnit.net VSTest Adapter v3.1.1+bf6400fd51 (64-bit .NET 10.0.15)&#xD;
+[xUnit.net 00:00:00.53]   Discovering: EasyShop.Tests&#xD;
+[xUnit.net 00:00:00.68]   Discovered:  EasyShop.Tests&#xD;
+[xUnit.net 00:00:00.72]   Starting:    EasyShop.Tests&#xD;
+[xUnit.net 00:00:01.71]   Finished:    EasyShop.Tests&#xD;
 </StdOut>
     </Output>
   </ResultSummary>

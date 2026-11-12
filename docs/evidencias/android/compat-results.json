@@ -1,0 +1,8 @@
+{
+  "result": "PASS",
+  "resolution": "720x1280",
+  "originalResolution": "Physical size: 1080x2400",
+  "airplaneModeDuringTest": "1",
+  "check": "App reiniciado e cliente persistido listado sem rede em resolução compacta",
+  "physicalDevice": false
+}

@@ -32,7 +32,7 @@ def inline(text):
 def footer(canvas, doc):
     canvas.setFont('Helvetica',8)
     canvas.setFillColor(colors.HexColor('#6c7e85'))
-    canvas.drawString(44,28,'EasyShop | Documentação acadêmica | 11/11/2026')
+    canvas.drawString(44,28,'EasyShop | Documentação acadêmica | Revisão 12/11/2026')
     canvas.drawRightString(551,28,str(doc.page))
 
 def generate(name):
@@ -58,7 +58,7 @@ def generate(name):
             story.extend([Image(str(path),width=width,height=height),Spacer(1,8),Paragraph(escape(match.group(1)),styles['Normal'])])
         elif line.startswith('# '):story.append(Paragraph(inline(line[2:]),styles['Title']))
         elif line.startswith('## '):
-            if name == 'manual-do-usuario' and line in ['## Clientes','## Erros e recuperação']: story.append(PageBreak())
+            if name == 'manual-do-usuario' and line in ['## Clientes','## Erros e recuperação','## Aplicativo Android']: story.append(PageBreak())
             if name == 'relatorio-executivo' and line == '## Cronograma planejado e executado': story.append(PageBreak())
             story.append(Paragraph(inline(line[3:]),styles['Heading2']))
         elif line:story.append(KeepTogether([Paragraph(inline(line),styles['Normal'])]))
