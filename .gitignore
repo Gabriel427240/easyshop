@@ -1,0 +1,10 @@
+**/bin/
+**/obj/
+**/TestResults/
+**/*.db
+**/*.db-*
+**/*.sqlite*
+.vs/
+.env
+artifacts/
+node_modules/
