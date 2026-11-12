@@ -1,0 +1,15 @@
+{
+  "result": "PASS",
+  "checks": [
+    "estado vazio",
+    "cadastro produto 29,90",
+    "listagem produto",
+    "preço zero rejeitado",
+    "cadastro cliente",
+    "email normalizado",
+    "duplicidade rejeitada",
+    "viewport 390 sem overflow",
+    "sem erros JavaScript"
+  ],
+  "screenshots": "capturadas da aplicação em execução"
+}

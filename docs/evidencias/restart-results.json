@@ -1,0 +1,9 @@
+﻿{
+    "products":  1,
+    "customers":  1,
+    "uiStatus":  200,
+    "email":  "marina@example.com",
+    "result":  "PASS",
+    "price":  29.9,
+    "mode":  "Restart com executável Windows autocontido"
+}
