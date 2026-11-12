@@ -2,6 +2,8 @@
 
 O EasyShop Android é um aplicativo nativo C#/.NET for Android, sem WebView nem servidor externo. Reutiliza por links de compilação as entidades, serviços e repositórios da versão desktop. LiteDB armazena produtos e Microsoft.Data.Sqlite armazena clientes em arquivos privados do aplicativo.
 
+APK pronto para instalar: https://github.com/Gabriel427240/easyshop/releases/tag/v1.1.0-android. A assinatura é de desenvolvimento. O checksum SHA-256 da versão verificada está em `evidencias/android/apk-sha256.json`.
+
 ## Ambiente
 
 - SDK .NET 10 e workload `android` (`dotnet workload install android`).

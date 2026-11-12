@@ -59,6 +59,7 @@ public sealed class MainActivity : Activity
     {
         content.AddView(Text(label, 14));
         var field = new EditText(this) { Hint = label, ContentDescription = id, InputType = type, TextSize = 16 };
+        if (id == "price") field.KeyListener = global::Android.Text.Method.DigitsKeyListener.GetInstance("0123456789,.");
         field.SetSingleLine(id != "attributes");
         if (id == "attributes") field.SetMinLines(2);
         content.AddView(field, new LinearLayout.LayoutParams(-1, -2));
