@@ -2,6 +2,8 @@
 
 Prazo acadêmico: **30/11/2026**. Implementação e validação técnica: **11/11/2026**.
 
+Atualização de interface Android e automação de vídeo: **13/11/2026**. Demonstração local aprovada em 14 verificações; consulte [automação de vídeo](video/automacao.md).
+
 - [x] Produtos com cadastro/listagem e LiteDB.
 - [x] Clientes com cadastro/listagem e SQLite.
 - [x] Camadas UI, Services e Repositories.
@@ -17,7 +19,8 @@ Prazo acadêmico: **30/11/2026**. Implementação e validação técnica: **11/1
 - [x] Leitura offline em modo avião e segunda resolução Android 720x1280 verificadas.
 - [ ] Confirmar com professor se o enunciado de logística/finanças também se aplica.
 - [ ] Informar identificador GitHub do colaborador e autorizar convite.
-- [ ] Colaborador gravar, narrar, editar e publicar vídeo de 3 a 5 minutos.
+- [x] Gerar vídeo local completo com narração e legendas; versão original de aproximadamente 4min13s e versão com voz externa de aproximadamente 2min46s.
+- [ ] Publicar vídeo e conferir a duração exigida pela avaliação (3 a 5 minutos no roteiro original).
 - [ ] Verificar link do vídeo sem autenticação antes da submissão.
 
 Repositório público: https://github.com/Gabriel427240/easyshop

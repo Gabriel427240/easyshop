@@ -1,6 +1,6 @@
 # Roteiro do vídeo EasyShop
 
-Duração prevista: **4 minutos**. Responsável por gravação, narração, edição e publicação: colaborador, identificador a confirmar. Link final: **a confirmar**. Não há gravação ou publicação feita pelo Codex.
+Duração prevista para o roteiro manual: **4 minutos**. A [automação de demonstração](automacao.md) já gera uma gravação local com narração sintética, legendas e verificações reais no emulador. A publicação e o link público continuam a confirmar. O roteiro abaixo é uma opção para gravação e narração próprias.
 
 | Tempo | Cena | Narração sugerida |
 | --- | --- | --- |

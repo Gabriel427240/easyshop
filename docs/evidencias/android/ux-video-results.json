@@ -1,0 +1,22 @@
+{
+  "result": "PASS",
+  "package": "br.edu.easyshop.demo",
+  "serial": "emulator-5554",
+  "checks": [
+    "Aplicativo Demo aberto",
+    "Digitação e atributos com múltiplas linhas",
+    "Produto cadastrado com sucesso",
+    "Produto listado",
+    "Preço em reais na lista",
+    "Preço zero rejeitado no formulário",
+    "Cliente cadastrado com sucesso",
+    "E-mail normalizado na listagem",
+    "Formato inválido de e-mail rejeitado",
+    "E-mail duplicado rejeitado",
+    "Rascunho preservado ao trocar de aba",
+    "Produto preservado após reabrir",
+    "Cliente preservado após reabrir",
+    "Catálogo disponível ao final"
+  ],
+  "physicalDevice": false
+}

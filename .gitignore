@@ -8,3 +8,6 @@
 .env
 artifacts/
 node_modules/
+.idea/
+**/__pycache__/
+*.pyc

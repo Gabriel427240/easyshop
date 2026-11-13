@@ -4,6 +4,12 @@ Aplicação acadêmica para cadastro e listagem de produtos e clientes. Produtos
 
 Também inclui **aplicativo Android nativo em C#**, com APK e bancos locais no próprio Android, sem depender do servidor Windows. Consulte [Android e emulador](docs/android.md) e a [auditoria do briefing](docs/auditoria-briefing.md).
 
+## Interface Android e demonstração automatizada
+
+A interface Android inclui abas de produtos e clientes, cartões, instruções de preenchimento, validação junto aos campos e preservação de rascunhos ao alternar abas. Os formulários acomodam o teclado virtual durante a digitação. Os serviços, repositórios e regras de persistência permanecem os mesmos.
+
+Para gravar uma demonstração real no emulador, com voz em português e legendas, execute `./scripts/demonstrar-app.ps1`. A automação instala **EasyShop Demo** separadamente, preserva os dados do app original e verifica 14 comportamentos. Também é possível substituir a voz por um áudio externo e sincronizar novamente as cenas e legendas. Consulte as [instruções e dependências](docs/video/automacao.md). Vídeos, áudios e bancos ficam locais e não são versionados.
+
 ## Executar no Windows
 
 Pré-requisitos: SDK .NET 10, navegador moderno e internet apenas para restaurar pacotes. O SDK foi instalado neste computador em `%LOCALAPPDATA%/EasyShop/dotnet`; o script encontra essa instalação ou o `dotnet` do PATH.
